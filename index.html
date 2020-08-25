@@ -278,6 +278,16 @@
         <li>Nationality: Egyptian</li>
       </ul>
     </div>
-    <a style="float: right;" href="" onclick="window.print()">Export or Print CV as pdf</a>
+    <a id="pdfLink" style="float: right;">Export or Print CV as pdf</a>
+  <script>
+    var pdfLink = document.getElementById("pdfLink");
+    function exportPdf(){
+      pdfLink.style.display = "none";
+
+      window.print();
+    } 
+    pdfLink.onclick = function() {exportPdf()};
+    
+  </script>
   </body>
 </html>
