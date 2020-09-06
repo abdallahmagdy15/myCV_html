@@ -111,6 +111,12 @@
     .handsLogo {
       width: 14px;
     }
+    .download_cv{
+      background-color: bisque;
+      color: darkorange;
+      padding-left: 1rem;
+      height: 1.5rem;
+    }
 
     @media only screen and (max-width: 600px) {
       .date_ {
@@ -133,7 +139,7 @@
     }
 
     * {
-      margin-top: 10px;
+      margin-top:0;
       margin-bottom: 10px;
     }
   </style>
@@ -141,6 +147,10 @@
 </head>
 
 <body>
+  <div class="download_cv">
+    <a id="pdfLink" style="font-size:.9rem; cursor:pointer;">Click here to download my CV as pdf</a>
+  </div>
+
   <div class="header">
     <h2>ABDULLAH MAGDY EL-KHAYYAT</h2>
     <h3>Kafrelsheikh City, Jihane St</h3>
@@ -157,7 +167,7 @@
     </h3>
   </div>
   <div class="content">
-    <h2>Professional Summary:</h2>
+    <h2 style="margin-top: 10px;">Professional Summary:</h2>
     <p style="padding-bottom: 10px;">
       I am a junior software engineer, I keep my skills updated and learning Modern technologies, I am a general
       software engineer with experience in mobile applications, back-end and front-end development in various languages
@@ -357,7 +367,6 @@
       <li>Nationality: Egyptian</li>
     </ul>
   </div>
-  <a id="pdfLink" style="float: right;cursor: pointer;">Export to pdf</a>
   <script>
     var pdfLink = document.getElementById("pdfLink");
 
